@@ -85,3 +85,70 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# original bash_profile start################################################
+#enables colorfor iTerm
+export TERM=xterm-256color
+
+#set manually path for fontconfig(/etc/fonts works for Linux installations, but OS X XQuartz goes to different place)
+export FONTCONFIG_PATH=/opt/X11/lib/X11/fontconfig
+export SPARK_HOME=/Users/plumrain/Applications/spark-2.0.0-bin-hadoop2.7
+export PYTHONPATH=$SPARK_HOME/python/:$PYTHONPATH
+export PYTHONPATH=$SPARK_HOME/python/lib/py4j-0.10.1-src.zip:$PYTHONPATH
+
+export EDITOR='vim'
+
+#历史记录中删除连续重复指令
+HISTCONTROL=ignoredups
+
+#export http_proxy=http://127.0.0.1:1080
+#export https_proxy=$http_proxy
+
+export PATH=~/Applications/BiliDan:"$PATH"
+export PATH=/usr/local/Cellar/smlnj/110.78/bin:"$PATH"
+export PATH=/Users/plumrain/.local/bin:"$PATH"
+export PATH="/Users/plumrain/anaconda2/bin:$PATH"
+
+alias py2='/usr/bin/python'
+#alias python='/usr/bin/python'
+alias pip2='/usr/local/bin/pip'
+alias py3='/Users/plumrain/anaconda3/bin/python'
+alias py3='/Users/plumrain/anaconda3/bin/python'
+alias l='ls -al'
+alias cod='cd ~/CodeTemp'
+alias blog='cd /Users/plumrain/LMH/Hexo/Merlinhool'
+alias hes='hexo clean; hexo g; hexo s'
+alias hesd='hexo clean; hexo g; hexo s --draft'
+alias VPS='ping 192.241.162.252'
+alias rmhask='rm *.hi; rm *.o'
+alias mkt='mkdir temp; cd temp'
+alias gpup='server5@111.161.7.20:/home/server5/experiments/'
+alias gpus='ssh -p 3000 server5@111.161.7.20'
+alias dmg='ssh dmgroup@10.103.242.202'
+alias meg='ssh -CAXY -D 7071 exp.liminghao.brw@brain.megvii-inc.com'
+alias megvm='ssh -CAXY liminghao-train.liminghao.brc@bj-a.brainpp.ml'
+
+if ! pgrep -u $USER ssh-agent > /dev/null; then
+    [ -d ~/.config ] || mkdir -v ~/.config
+    ssh-agent > ~/.config/ssh-agent-thing
+    echo "ssh-agent started"
+fi
+eval $(<~/.config/ssh-agent-thing) > /dev/null
+
+# original bash_profile end################################################
+
+alias -s cpp=vim
+alias -s py=vim
+alias -s md=code
+alias -s gz='tar -xzvf'
+alias -s tgz='tar -xzvf'
+alias -s zip='unzip'
+alias -s bz2='tar -xjvf'
+
+## from .bash_profile
+alias blog='cd /Users/plumrain/LMH/Hexo/Merlinhool'
+alias hes='hexo clean; hexo g; hexo s'
+alias hesd='hexo clean; hexo g; hexo s --draft'
+
+# plugins
+## zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
