@@ -31,7 +31,8 @@ set mouse=a
 set selection=inclusive
 set selectmode=mouse,key
 "set clipboard=unnamed
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+"set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set fileencodings=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
 "if filereadable(expand('%<').'.in')
 autocmd FileType java :set cin mp=javac\ -encoding\ utf-8\ %

@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/plumrain/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -106,12 +106,9 @@ HISTCONTROL=ignoredups
 export PATH=~/Applications/BiliDan:"$PATH"
 export PATH=/usr/local/Cellar/smlnj/110.78/bin:"$PATH"
 export PATH=/Users/plumrain/.local/bin:"$PATH"
-export PATH="/Users/plumrain/anaconda2/bin:$PATH"
+export PATH="/Users/plumrain/anaconda3/bin:$PATH"
 
-alias py2='/usr/bin/python'
 #alias python='/usr/bin/python'
-alias pip2='/usr/local/bin/pip'
-alias py3='/Users/plumrain/anaconda3/bin/python'
 alias py3='/Users/plumrain/anaconda3/bin/python'
 alias l='ls -al'
 #alias cod='cd ~/CodeTemp'
@@ -144,10 +141,6 @@ alias -s gz='tar -xzvf'
 alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
-
-# plugins
-## zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # hash
 hash -d blog='/Users/plumrain/LMH/Hexo/Merlinhool'
