@@ -114,8 +114,8 @@ alias pip2='/usr/local/bin/pip'
 alias py3='/Users/plumrain/anaconda3/bin/python'
 alias py3='/Users/plumrain/anaconda3/bin/python'
 alias l='ls -al'
-alias cod='cd ~/CodeTemp'
-alias blog='cd /Users/plumrain/LMH/Hexo/Merlinhool'
+#alias cod='cd ~/CodeTemp'
+#alias blog='cd /Users/plumrain/LMH/Hexo/Merlinhool'
 alias hes='hexo clean; hexo g; hexo s'
 alias hesd='hexo clean; hexo g; hexo s --draft'
 alias VPS='ping 192.241.162.252'
@@ -144,11 +144,10 @@ alias -s tgz='tar -xzvf'
 alias -s zip='unzip'
 alias -s bz2='tar -xjvf'
 
-## from .bash_profile
-alias blog='cd /Users/plumrain/LMH/Hexo/Merlinhool'
-alias hes='hexo clean; hexo g; hexo s'
-alias hesd='hexo clean; hexo g; hexo s --draft'
-
 # plugins
 ## zsh-syntax-highlighting
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# hash
+hash -d blog='/Users/plumrain/LMH/Hexo/Merlinhool'
+hash -d code='/Users/plumrain/CodeTemp'
