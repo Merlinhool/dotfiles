@@ -126,6 +126,7 @@ alias dmg='ssh dmgroup@10.103.242.202'
 alias meg='ssh -CAXY -D 7071 exp.liminghao.brw@brain.megvii-inc.com'
 alias megvm='ssh -CAXY liminghao-train.liminghao.brc@bj-a.brainpp.ml'
 alias server='ssh -D 7071 lmh@10.103.241.233'
+serv='lmh@10.103.241.233'
 
 if ! pgrep -u $USER ssh-agent > /dev/null; then
     [ -d ~/.config ] || mkdir -v ~/.config
